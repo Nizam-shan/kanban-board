@@ -13,4 +13,8 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  server: {
+    port: process.env.PORT || 10000, // Ensure the correct port (default to 10000 for Render)
+    host: "0.0.0.0", // Expose the app to all interfaces
+  },
 });
