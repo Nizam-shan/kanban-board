@@ -80,7 +80,14 @@ export default {
                 alert('Task title is required');
                 return;
             }
-            emit('addTask', task.value);
+              const formattedTask = {
+        title: task.value.title,
+        descriptions: task.value.descriptions,
+        due_date: task.value.due_date,
+        assignee: task.value.assignee,
+        status: typeof task.value.status === 'object' ? task.value.status.title : task.value.status,
+    };
+            emit('addTask', formattedTask);
             emit('close');
         };
         return { task, submitTask };

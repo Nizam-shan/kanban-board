@@ -2,18 +2,24 @@
 
 
     <nav class="bg-white border-gray-200">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <div  class="flex items-center space-x-3 rtl:space-x-reverse">
+        
+        <div class="w-full flex flex-wrap items-center justify-between  p-4 px-14">
+           
+            <div  class="flex items-center space-x-3 rtl:space-x-reverse gap-4">
+                <div class="text-gray-400 border border-gray-200 p-3 rounded-xl">
+                  
+                    <i class="pi pi-arrow-left text-xl" style="font-size: 1.5rem"></i>
+                </div>
                 <img src="https://thumbs.dreamstime.com/b/apple-logo-19106337.jpg" class="h-14 rounded-xl w-14" alt="Flowbite Logo" />
               <div class="block">
                   <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">Apple</span>
-                  <p class="text-black">5 Board 24 members</p>
+                  <p class="text-gray-400">5 Board 24 members</p>
               </div>
             </div>
 
 
 
-            <div class="flex md:order-2">
+            <div class="flex md:order-2 items-center gap-3">
                 <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
                     aria-expanded="false"
                     class="md:hidden text-gray-500  focus:outline-none  rounded-lg text-sm p-2.5 ">
@@ -36,9 +42,13 @@
                     <input type="text" id="search-navbar"
                         class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white "
                         placeholder="Search...">
+                        
                 </div>
                
-               
+                <div class="text-gray-400 border border-gray-200 p-2 rounded-xl flex text-center items-center">
+                  
+                    <i class="pi pi-cog text-xl text-gray-400" style="font-size: 1.5rem"></i>
+                </div>
             </div>
         </div>
     </nav>
